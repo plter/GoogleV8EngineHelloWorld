@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.2)
-project(HelloCPP)
+project(GoogleV8HelloWorld)
 
 include_directories(/Work/v8work/v8parent/v8)
 
@@ -22,6 +22,6 @@ link_libraries(
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -stdlib=libstdc++")
 
 set(SOURCE_FILES
-main.cpp)
+../../src/main.cpp)
 
-add_executable(HelloCPP ${SOURCE_FILES} MyAllocator.cpp MyAllocator.h)
+add_executable(GoogleV8HelloWorld ${SOURCE_FILES} ../../src/MyAllocator.cpp ../../src/MyAllocator.h)
